@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu {
+  flex: 1;
+  background-color: var(--bgSoft);
+  padding: 20px;
+}
+
+.content {
+  flex: 4;
+  padding: 20px;
+}
