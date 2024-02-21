@@ -9,7 +9,9 @@ const Card = () => {
         <span className={styles.title}>Sales</span>
         <div className={styles.item}>
           <span className={styles.number}>RM4950</span>
-          <span className={styles.positive}>+4.2%</span>
+          <div className={styles.percentage}>
+            <span className={styles.positive}>+4.2%</span>
+          </div>
         </div>
         <span className={styles.previous}>Compared to (RM3384 last month)</span>
       </div>

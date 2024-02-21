@@ -1,0 +1,22 @@
+.container {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table thead {
+  background-color: var(--bg);
+  border-radius: 10px;
+  border: none;
+  color: #54565a;
+}
+
+.table td {
+  padding: 10px;
+  color: #cacbcc;
+}

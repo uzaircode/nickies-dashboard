@@ -3,10 +3,9 @@ import MenuLink from './menuLink/menuLink';
 import Image from 'next/image';
 import {
   MdDashboard,
-  MdSupervisedUserCircle,
+  MdPerson,
   MdShoppingBag,
   MdInventory,
-  MdLogout,
 } from 'react-icons/md';
 
 const menuItems = [
@@ -15,22 +14,22 @@ const menuItems = [
       {
         title: 'Dashboard',
         path: '/dashboard',
-        icon: <MdDashboard />,
+        icon: <MdDashboard size={23} />,
       },
       {
         title: 'Customers',
         path: '/dashboard/customers',
-        icon: <MdSupervisedUserCircle />,
+        icon: <MdPerson size={23} />,
       },
       {
         title: 'Products',
         path: '/dashboard/products',
-        icon: <MdShoppingBag />,
+        icon: <MdShoppingBag size={23} />,
       },
       {
         title: 'Stocks',
         path: '/dashboard/stocks',
-        icon: <MdInventory />,
+        icon: <MdInventory size={23} />,
       },
     ],
   },
@@ -39,6 +38,10 @@ const menuItems = [
 const Sidebar = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.logo}>
+        <Image src="/nickieslogo.png" alt="" width="50" height="50" />
+        <span className={styles.name}>Nickies</span>
+      </div>
       <ul className={styles.list}>
         {menuItems.map((cat) => (
           <li key={cat.title}>
@@ -48,9 +51,6 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
-      <button className={styles.logout}>
-        <MdLogout /> Logout
-      </button>
     </div>
   );
 };

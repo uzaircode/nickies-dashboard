@@ -7,9 +7,10 @@ const Products = () => {
       <table className={styles.table}>
         <thead>
           <tr>
-            <td>Title</td>
+            <td>Name</td>
+            <td>Category</td>
             <td>Price</td>
-            <td>Stock</td>
+            <td>Cost</td>
           </tr>
         </thead>
         <tbody>

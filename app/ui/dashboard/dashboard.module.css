@@ -20,13 +20,13 @@
 }
 
 .menu {
-  flex: 1;
+  flex: 1.2;
   background-color: var(--bgSoft);
   padding: 20px;
 }
 
 .content {
-  flex: 5;
+  flex: 6;
   padding: 20px;
 }
 
