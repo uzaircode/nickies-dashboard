@@ -5,7 +5,9 @@ import {
   MdDashboard,
   MdPerson,
   MdShoppingBag,
+  MdAddShoppingCart,
   MdInventory,
+  MdAutoGraph,
 } from 'react-icons/md';
 
 const menuItems = [
@@ -15,6 +17,11 @@ const menuItems = [
         title: 'Dashboard',
         path: '/dashboard',
         icon: <MdDashboard size={23} />,
+      },
+      {
+        title: 'Orders',
+        path: '/dashboard/orders',
+        icon: <MdAddShoppingCart size={23} />,
       },
       {
         title: 'Customers',
@@ -30,6 +37,11 @@ const menuItems = [
         title: 'Stocks',
         path: '/dashboard/stocks',
         icon: <MdInventory size={23} />,
+      },
+      {
+        title: 'Transactions',
+        path: '/dashboard/transactions',
+        icon: <MdAutoGraph size={23} />,
       },
     ],
   },

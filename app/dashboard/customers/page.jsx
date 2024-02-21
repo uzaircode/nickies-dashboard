@@ -4,7 +4,10 @@ import Card from '../../ui/dashboard/cards/cards';
 const Customers = () => {
   return (
     <div className={styles.container}>
-      <h2>Customers</h2>
+      <div className={styles.title}>
+        <h2>Customers</h2>
+        <button className={styles.addButton}>+ Add new</button>
+      </div>
       <br />
       <div className={styles.cards}>
         <Card />
@@ -15,10 +18,10 @@ const Customers = () => {
       <table className={styles.table}>
         <thead>
           <tr>
-            <td>Name</td>
+            <td>Customer Name</td>
             <td>Location</td>
             <td>Phone</td>
-            <td>Order</td>
+            <td>Total Orders</td>
           </tr>
         </thead>
         <tbody>

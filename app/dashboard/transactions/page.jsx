@@ -1,11 +1,11 @@
 import styles from '../../ui/dashboard/stocks/stocks.module.css';
 import Card from '../../ui/dashboard/cards/cards';
 
-const Stocks = () => {
+const Transactions = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h2>Stocks</h2>
+        <h2>Transactions</h2>
         <button className={styles.addButton}>+ Add new</button>
       </div>
       <br />
@@ -18,48 +18,40 @@ const Stocks = () => {
       <table className={styles.table}>
         <thead>
           <tr>
-            <td>Stock Name</td>
-            <td>Brand</td>
-            <td>Category</td>
-            <td>Cost</td>
+            <td>Payment ID</td>
+            <td>Date</td>
+            <td>Amount</td>
             <td>Status</td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Fresh Milk</td>
-            <td>Yarra</td>
-            <td>
-              <span>Condiment</span>
-            </td>
-            <td>RM15.00</td>
+            <td>#1430</td>
+            <td>12/1/2024</td>
+            <td>RM32.00</td>
             <td>
               <span className={`${styles.status} ${styles.done}`}>
-                In Stock
+                Completed
               </span>
             </td>
           </tr>
           <tr>
-            <td>French Vanilla</td>
-            <td>Monin</td>
-            <td>
-              <span>Condiment</span>
-            </td>
-            <td>RM22.50</td>
+            <td>#1430</td>
+            <td>10/1/2024</td>
+            <td>RM64.00</td>
             <td>
               <span className={`${styles.status} ${styles.done}`}>
-                In Stock
+                Completed
               </span>
             </td>
           </tr>
           <tr>
-            <td>Callebaut Cocoa</td>
-            <td>Universelle Extra Brute</td>
-            <td>Powder</td>
-            <td>RM45.00</td>
+            <td>#1430</td>
+            <td>02/1/2024</td>
+            <td>RM23.00</td>
             <td>
-              <span className={`${styles.statusDecline} ${styles.decline}`}>
-                Out of Stock
+              <span className={`${styles.status} ${styles.done}`}>
+                Completed
               </span>
             </td>
           </tr>
@@ -69,4 +61,4 @@ const Stocks = () => {
   );
 };
 
-export default Stocks;
+export default Transactions;

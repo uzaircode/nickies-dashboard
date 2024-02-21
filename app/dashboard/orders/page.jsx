@@ -1,11 +1,11 @@
 import styles from '../../ui/dashboard/stocks/stocks.module.css';
 import Card from '../../ui/dashboard/cards/cards';
 
-const Stocks = () => {
+const Orders = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h2>Stocks</h2>
+        <h2>Orders</h2>
         <button className={styles.addButton}>+ Add new</button>
       </div>
       <br />
@@ -18,49 +18,45 @@ const Stocks = () => {
       <table className={styles.table}>
         <thead>
           <tr>
-            <td>Stock Name</td>
-            <td>Brand</td>
-            <td>Category</td>
-            <td>Cost</td>
+            <td>Order ID</td>
+            <td>Date</td>
+            <td>Customer</td>
+            <td>Payment</td>
             <td>Status</td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Fresh Milk</td>
-            <td>Yarra</td>
+            <td>#2343</td>
+            <td>19/02/2024</td>
             <td>
-              <span>Condiment</span>
+              <span>Nabil Ervine</span>
             </td>
             <td>RM15.00</td>
             <td>
-              <span className={`${styles.status} ${styles.done}`}>
-                In Stock
-              </span>
+              <span className={`${styles.status} ${styles.done}`}>Paid</span>
             </td>
           </tr>
           <tr>
-            <td>French Vanilla</td>
-            <td>Monin</td>
+            <td>#2342</td>
+            <td>12/02/2024</td>
             <td>
-              <span>Condiment</span>
+              <span>Elina Farah</span>
             </td>
-            <td>RM22.50</td>
+            <td>RM8.00</td>
             <td>
-              <span className={`${styles.status} ${styles.done}`}>
-                In Stock
-              </span>
+              <span className={`${styles.status} ${styles.done}`}>Paid</span>
             </td>
           </tr>
           <tr>
-            <td>Callebaut Cocoa</td>
-            <td>Universelle Extra Brute</td>
-            <td>Powder</td>
-            <td>RM45.00</td>
+            <td>#2341</td>
+            <td>03/01/2024</td>
             <td>
-              <span className={`${styles.statusDecline} ${styles.decline}`}>
-                Out of Stock
-              </span>
+              <span>Daniel Haris</span>
+            </td>
+            <td>RM24.00</td>
+            <td>
+              <span className={`${styles.status} ${styles.done}`}>Paid</span>
             </td>
           </tr>
         </tbody>
@@ -69,4 +65,4 @@ const Stocks = () => {
   );
 };
 
-export default Stocks;
+export default Orders;

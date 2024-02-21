@@ -1,14 +1,75 @@
 .container {
-  background-color: var(--bgSoft);
-  padding: 20px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.addButton {
+  padding: 13px 25px;
+  background-color: #45c49c;
+  color: var(--text);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .table {
+  background-color: var(--bgSoft);
+  border-collapse: collapse;
   width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.table thead {
+  border-bottom: 1pt solid #1a1e23;
+  font-size: 14px;
+}
+
+.table tr {
+  border-bottom: 1pt solid #1a1e23;
 }
 
 .table td {
-  padding: 10px;
+  padding: 20px;
+  color: #8e6cd9;
+}
+
+.table tbody td {
+  color: #cacbcc;
+  font-size: 14px;
+}
+
+.status {
+  padding: 5px;
+  border-radius: 5px;
+  color: #388e74;
+}
+
+.statusDecline {
+  padding: 5px;
+  border-radius: 5px;
+  color: #ab4143;
+}
+
+.done {
+  background-color: #1b1f25;
+}
+
+.decline {
+  background-color: #291b1f;
 }
