@@ -4,10 +4,8 @@ import styles from './stackedbarchart.module.css';
 import {
   BarChart,
   Bar,
-  Cell,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
   Legend,
   ResponsiveContainer,
@@ -74,13 +72,12 @@ const StackedBarChart = () => {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" stackId="a" fill="#8884d8" />
-          <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
+          <Bar dataKey="pv" stackId="a" fill="#45c49c" />
+          <Bar dataKey="uv" stackId="a" fill="#9a75ec" />
         </BarChart>
       </ResponsiveContainer>
     </div>

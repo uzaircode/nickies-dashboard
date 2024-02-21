@@ -5,18 +5,12 @@ import {
   MdDashboard,
   MdSupervisedUserCircle,
   MdShoppingBag,
-  MdAttachMoney,
-  MdWork,
-  MdAnalytics,
-  MdPeople,
-  MdHelpCenter,
-  MdSettings,
+  MdInventory,
   MdLogout,
 } from 'react-icons/md';
 
 const menuItems = [
   {
-    title: 'Pages',
     list: [
       {
         title: 'Dashboard',
@@ -24,8 +18,8 @@ const menuItems = [
         icon: <MdDashboard />,
       },
       {
-        title: 'Users',
-        path: '/dashboard/users',
+        title: 'Customers',
+        path: '/dashboard/customers',
         icon: <MdSupervisedUserCircle />,
       },
       {
@@ -34,44 +28,9 @@ const menuItems = [
         icon: <MdShoppingBag />,
       },
       {
-        title: 'Transactions',
-        path: '/dashboard/transactions',
-        icon: <MdAttachMoney />,
-      },
-    ],
-  },
-  {
-    title: 'Analytics',
-    list: [
-      {
-        title: 'Analytics',
-        path: '/dashboard/analytics',
-        icon: <MdAnalytics />,
-      },
-      {
-        title: 'Revenue',
-        path: '/dashboard/revenue',
-        icon: <MdWork />,
-      },
-      {
-        title: 'Teams',
-        path: '/dashboard/teams',
-        icon: <MdPeople />,
-      },
-    ],
-  },
-  {
-    title: 'User',
-    list: [
-      {
-        title: 'Settings',
-        path: '/dashboard/settings',
-        icon: <MdSettings />,
-      },
-      {
-        title: 'Help',
-        path: '/dashboard/help',
-        icon: <MdHelpCenter />,
+        title: 'Stocks',
+        path: '/dashboard/stocks',
+        icon: <MdInventory />,
       },
     ],
   },
@@ -80,23 +39,9 @@ const menuItems = [
 const Sidebar = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.user}>
-        <Image
-          className={styles.userImage}
-          src="/noavatar.png"
-          alt=""
-          width="50"
-          height="50"
-        />
-        <div className={styles.userDetail}>
-          <span className={styles.name}>John Doe</span>
-          <span className={styles.role}>Administrator</span>
-        </div>
-      </div>
       <ul className={styles.list}>
         {menuItems.map((cat) => (
           <li key={cat.title}>
-            <span className={styles.cat}>{cat.title}</span>
             {cat.list.map((item) => (
               <MenuLink item={item} key={item.title} />
             ))}

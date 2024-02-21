@@ -1,28 +1,6 @@
 .container {
   position: sticky;
-  width: 250px;
   height: 100vh;
-}
-
-.user {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.userImage {
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.userDetail {
-  display: flex;
-  flex-direction: column;
-}
-
-.name {
-  font-weight: 500;
 }
 
 .list {
@@ -33,7 +11,7 @@
   color: var(--textSoft);
   font-weight: bold;
   font-size: 13px;
-  margin: 10px 0px;
+  margin: 10px;
 }
 
 .logout {

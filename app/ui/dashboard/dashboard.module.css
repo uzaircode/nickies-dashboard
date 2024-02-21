@@ -9,6 +9,10 @@
   justify-content: space-around;
 }
 
+.wrapper {
+  margin-top: 20px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -22,6 +26,12 @@
 }
 
 .content {
-  flex: 4;
+  flex: 5;
   padding: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
 }

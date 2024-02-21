@@ -1,0 +1,39 @@
+.container {
+  background-color: var(--bgSoft);
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 14px;
+  color: #cacbcc;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.positive {
+  color: #3fb18e;
+}
+
+.previous {
+  color: #54565a;
+}

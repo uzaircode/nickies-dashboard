@@ -1,5 +1,6 @@
 import styles from '../ui/dashboard/dashboard.module.css';
 import Sidebar from '../ui/dashboard/sidebar/sidebar';
+import Navbar from '../ui/dashboard/navbar/navbar';
 
 export default function Layout({ children }) {
   return (
@@ -7,7 +8,10 @@ export default function Layout({ children }) {
       <div className={styles.menu}>
         <Sidebar />
       </div>
-      <div className={styles.content}>{children}</div>
+      <div className={styles.content}>
+        <Navbar />
+        {children}
+      </div>
     </div>
   );
 }
