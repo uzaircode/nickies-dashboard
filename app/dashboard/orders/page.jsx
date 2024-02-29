@@ -9,12 +9,6 @@ const Orders = () => {
         <button className={styles.addButton}>+ Add new</button>
       </div>
       <br />
-      <div className={styles.cards}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
       <table className={styles.table}>
         <thead>
           <tr>
@@ -33,28 +27,6 @@ const Orders = () => {
               <span>Nabil Ervine</span>
             </td>
             <td>RM15.00</td>
-            <td>
-              <span className={`${styles.status} ${styles.done}`}>Paid</span>
-            </td>
-          </tr>
-          <tr>
-            <td>#2342</td>
-            <td>12/02/2024</td>
-            <td>
-              <span>Elina Farah</span>
-            </td>
-            <td>RM8.00</td>
-            <td>
-              <span className={`${styles.status} ${styles.done}`}>Paid</span>
-            </td>
-          </tr>
-          <tr>
-            <td>#2341</td>
-            <td>03/01/2024</td>
-            <td>
-              <span>Daniel Haris</span>
-            </td>
-            <td>RM24.00</td>
             <td>
               <span className={`${styles.status} ${styles.done}`}>Paid</span>
             </td>

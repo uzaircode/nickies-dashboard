@@ -13,45 +13,63 @@ import {
 
 const data = [
   {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
+    name: '23/1',
+    sales: 100,
     amt: 2400,
   },
   {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
+    name: '24/1',
+    sales: 230,
     amt: 2210,
   },
   {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
+    name: '25/1',
+    sales: 370,
     amt: 2290,
   },
   {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
+    name: '1/2',
+    sales: 430,
     amt: 2000,
   },
   {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
+    name: '2/2',
+    sales: 510,
     amt: 2181,
   },
   {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
+    name: '3/2',
+    sales: 622,
     amt: 2500,
   },
   {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
+    name: '14/2',
+    sales: 721,
+    amt: 2100,
+  },
+  {
+    name: '15/2',
+    sales: 867,
+    amt: 2100,
+  },
+  {
+    name: '16/2',
+    sales: 992,
+    amt: 2100,
+  },
+  {
+    name: '22/2',
+    sales: 1023,
+    amt: 2100,
+  },
+  {
+    name: '23/2',
+    sales: 1134,
+    amt: 2100,
+  },
+  {
+    name: '24/2',
+    sales: 1234,
     amt: 2100,
   },
 ];
@@ -76,13 +94,12 @@ const Chart = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line
+          {/* <Line
             type="monotone"
-            dataKey="pv"
             stroke="#f05656"
             activeDot={{ r: 8 }}
-          />
-          <Line type="monotone" dataKey="uv" stroke="#7559b2" />
+          /> */}
+          <Line type="monotone" dataKey="sales" stroke="#7559b2" />
         </LineChart>
       </ResponsiveContainer>
     </div>

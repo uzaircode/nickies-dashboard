@@ -1,19 +1,21 @@
 import styles from './cards.module.css';
-import { MdSupervisedUserCircle } from 'react-icons/md';
 
-const Card = () => {
+const Card = (props) => {
+  const { icon, title, number, percentage, description } = props;
+
   return (
     <div className={styles.container}>
-      <MdSupervisedUserCircle size={24} />
+      {/* <MdSupervisedUserCircle size={24} /> */}
+      {icon}
       <div className={styles.details}>
-        <span className={styles.title}>Sales</span>
+        <span className={styles.title}>{title}</span>
         <div className={styles.item}>
-          <span className={styles.number}>RM4950</span>
+          <span className={styles.number}>{number}</span>
           <div className={styles.percentage}>
-            <span className={styles.positive}>+4.2%</span>
+            <span className={styles.positive}>{percentage}</span>
           </div>
         </div>
-        <span className={styles.previous}>Compared to (RM3384 last month)</span>
+        <span className={styles.previous}>{description}</span>
       </div>
     </div>
   );

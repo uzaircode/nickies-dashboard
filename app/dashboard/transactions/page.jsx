@@ -9,12 +9,6 @@ const Transactions = () => {
         <button className={styles.addButton}>+ Add new</button>
       </div>
       <br />
-      <div className={styles.cards}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
       <table className={styles.table}>
         <thead>
           <tr>

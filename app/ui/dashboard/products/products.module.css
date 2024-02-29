@@ -66,6 +66,25 @@
   color: #ab4143;
 }
 
+.coffee {
+  padding: 5px;
+  border-radius: 5px;
+  color: #6f4e37;
+}
+
+.backgroundChocolate {
+  background-color: #1b1f25;
+}
+.backgroundCoffee {
+  background-color: #1b1f25;
+}
+
+.chocolate {
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
 .done {
   background-color: #1b1f25;
 }

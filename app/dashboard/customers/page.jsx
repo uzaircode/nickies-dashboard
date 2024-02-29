@@ -9,12 +9,6 @@ const Customers = () => {
         <button className={styles.addButton}>+ Add new</button>
       </div>
       <br />
-      <div className={styles.cards}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
       <table className={styles.table}>
         <thead>
           <tr>
@@ -25,7 +19,7 @@ const Customers = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          {/* <tr>
             <td>Nik Uzair</td>
             <td>Pengkalan Chepa</td>
             <td>+6018 900 2414</td>
@@ -72,7 +66,7 @@ const Customers = () => {
             <td>Padang Garong</td>
             <td>+6013 3456 7890</td>
             <td>33</td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
     </div>
